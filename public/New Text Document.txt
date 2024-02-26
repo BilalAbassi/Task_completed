@@ -1,0 +1,70 @@
+navbar backup--------------------------
+  <nav
+      className="bg-black hidden md:flex md:justify-center md:items-center text-white
+    font-bold align-baseline md:text-sm max-w-[4000px] 2xl:justify-center xl:pl-16 2xl:pl-0 border-b "
+    >
+      <ul className=" flex justify-center items-center">
+        <div className=" flex items-center">
+          <Link href="/">
+            <li className=" md:pr-4 lg:pr-6 xl:pr-14">
+              <Image
+                src="/logo.svg"
+                width={250}
+                height={1000}
+                className="xl:w-[250px]"
+              />
+            </li>
+          </Link>
+          <div className=" w-[0.5px] h-20 bg-white"></div>
+        </div>
+
+        {/* Search */}
+        <div className=" flex items-center px-8">
+          <li className=" md:pr-4 lg:pr-6 xl:pr-14 justify-center flex w-[600px]">
+            <div className="grid col-span-2 w-[500px] bg-white">
+              <div className=" flex items-center  py-4 text-white text-sm">
+                <input
+                  placeholder="Search"
+                  className="w-[90%] outline-none rounded-md px-2 h-[100%]"
+                />
+
+                <BsSearch size={23} className=" inline text-black" />
+              </div>
+            </div>
+          </li>
+
+          <div className=" w-[0.5px] h-20 bg-white"></div>
+        </div>
+
+        {/* btc */}
+        <div className=" flex items-center">
+          <Link href="/">
+            <li className=" md:pr-4 lg:px-3">
+              <div className="text-white  items-center px-6">
+                <div className="flex justify-center items-center">
+                  <MdCurrencyBitcoin className="text-[20px]" />
+
+                  <p>BTC</p>
+                  <RiArrowDownSFill className="text-[20px]" />
+                </div>
+              </div>
+            </li>
+          </Link>
+          <div className=" w-[0.5px] h-20 bg-white"></div>
+        </div>
+        {/* Menu */}
+        <div className=" flex items-center">
+          <Link href="/">
+            <li className=" md:pr-4 lg:px-3">
+              <div>
+                <div className="text-white flex justify-center items-center">
+                  <GiHamburgerMenu className="text-[20px]" />
+                  <p>Menu</p>
+                </div>
+              </div>
+            </li>
+          </Link>
+        </div>
+      </ul>
+    </nav>
+-------------------------------------------------------------
