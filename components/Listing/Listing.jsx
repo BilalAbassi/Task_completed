@@ -98,7 +98,7 @@ const Listing = () => {
         >
           <SwiperButton />
 
-          {data.map((item, key) => (
+          {data.map((item) => (
             <SwiperSlide key={item.id}>
               <Card2 imgData={item.img} />
             </SwiperSlide>
