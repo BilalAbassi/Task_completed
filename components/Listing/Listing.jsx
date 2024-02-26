@@ -14,24 +14,31 @@ import Card2 from "./Card2";
 const Listing = () => {
   const data = [
     {
+      id: 1,
       img: "/popular-pic1.jpg",
     },
     {
+      id: 2,
       img: "/popular-pic2.jpg",
     },
     {
+      id: 3,
       img: "/popular-pic3.jpg",
     },
     {
+      id: 4,
       img: "/popular-pic1.jpg",
     },
     {
+      id: 5,
       img: "/popular-pic2.jpg",
     },
     {
+      id: 6,
       img: "/popular-pic1.jpg",
     },
     {
+      id: 7,
       img: "/popular-pic2.jpg",
     },
   ];
@@ -91,8 +98,8 @@ const Listing = () => {
         >
           <SwiperButton />
 
-          {data.map((item) => (
-            <SwiperSlide>
+          {data.map((item, key) => (
+            <SwiperSlide key={item.id}>
               <Card2 imgData={item.img} />
             </SwiperSlide>
           ))}
